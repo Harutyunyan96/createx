@@ -20,6 +20,12 @@
 }
 
 @media (max-width:769px) {
+ 
+
+  .logo {
+    width: 30%;
+  }
+
   .navigation {
     display: none;
   }
@@ -38,6 +44,9 @@
 }
 
 @media (max-width:481px) {
+  .logo {
+    width: 40%;
+  }
 
 }
 
