@@ -1,13 +1,40 @@
 @media (max-width:1201px) {
-
+  .headerCenter {
+    width: 100%;
+  }
 }
 
 @media (max-width:1025px) {
-  
+  .headerCenter {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .toolBar {
+    display: none;
+  }
+
+  .searchBlock {
+    width: 250px;
+  }
 }
 
 @media (max-width:769px) {
-  
+  .navigation {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .burgerMenu {
+    width: 80px;
+    height: 100px;
+    display: flex;
+  }
+
+
 }
 
 @media (max-width:481px) {
