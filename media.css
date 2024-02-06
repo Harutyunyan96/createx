@@ -2,6 +2,10 @@
   .headerCenter {
     width: 100%;
   }
+
+  .inManuName {
+    width: 90%;
+  }
 }
 
 @media (max-width:1025px) {
@@ -10,12 +14,41 @@
     justify-content: space-around;
   }
 
+  .navigation {
+    width: 45%;
+  }
+
   .toolBar {
     display: none;
   }
 
   .searchBlock {
     width: 250px;
+  }
+
+  .inManuName {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .infoBlock {
+    width: 25%;
+  }
+
+  .clothes {
+    width: 25%;
+  }
+
+  .shoes {
+    width: 25%;
+  }
+
+  .accessories {
+    width: 25%;
+  }
+
+  .advertis {
+    display: none;
   }
 }
 
@@ -39,7 +72,6 @@
     height: 100px;
     display: flex;
   }
-
 
 }
 
