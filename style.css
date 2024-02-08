@@ -336,7 +336,7 @@
 
 .burgerMenu.active .line:nth-child(2){
     opacity: 0;
-    transition: .01s;
+    transition: .1s;
 }
 
 .burgerMenu.active .line:nth-child(3){
@@ -347,7 +347,7 @@
 }
 
 .burgerList {
-    width: 300px;
+    width: 0;
     height: 100%;
     position: absolute;
     top: 150px;
@@ -355,9 +355,12 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    visibility: hidden;
-    opacity: 0;
     transition: 0.3s;
+    op
+}
+
+.avtiveMobileMenu {
+    width: 300px;
 }
 
 .clothesList {
@@ -373,8 +376,8 @@
     margin-top: 10px;
 }
 
-.categories {
-    width: 300px;
+.categoriesWomen {
+    width: 0;
     height: 120px;
     position: absolute;
     top: 10px;
@@ -382,7 +385,48 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+} 
+
+.categoriesMen {
+    width: 0px;
+    height: 120px;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+} 
+
+.categoriesGirls {
+    width: 0px;
+    height: 120px;
+    position: absolute;
+    top: 120px;
+    right: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }   
+
+.categoriesBoys {
+    width: 0px;
+    height: 120px;
+    position: absolute;
+    top: 190px;
+    right: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}   
+
+.categoriesWomenActiv {
+    width: 300px;
+}
 
 .clothesCategories {
     font-family: "Lato";
