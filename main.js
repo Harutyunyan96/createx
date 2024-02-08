@@ -69,3 +69,30 @@ function boysList() {
 }
 
 classList4.addEventListener('click', boysList)
+
+// remove class in burgermenu list
+
+function removeClass() {
+    var list1 = document.getElementById("list1").classList;
+    var list2 = document.getElementById("list2").classList;
+    var list3 = document.getElementById("list3").classList;
+    var list4 = document.getElementById("list4").classList;
+
+    if(list1.contains("categoriesWomenActiv")){
+        list2.remove("categoriesWomenActiv")
+        list3.remove("categoriesWomenActiv")
+        list4.remove("categoriesWomenActiv")
+    }else if(list2.contains("categoriesWomenActiv")){
+        list1.remove("categoriesWomenActiv")
+        list3.remove("categoriesWomenActiv")
+        list4.remove("categoriesWomenActiv")
+    }else if(list3.contains("categoriesWomenActiv")){
+        list1.remove("categoriesWomenActiv")
+        list2.remove("categoriesWomenActiv")
+        list4.remove("categoriesWomenActiv")
+    }else if(list4.contains("categoriesWomenActiv")){
+        list1.remove("categoriesWomenActiv")
+        list2.remove("categoriesWomenActiv")
+        list3.remove("categoriesWomenActiv")
+    }
+}
