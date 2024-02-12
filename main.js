@@ -2,7 +2,7 @@
 
 const burgerMenu = document.querySelector(".burgerMenu");
 
-function addClass(){
+function addClass() {
     burgerMenu.classList.toggle("active")
 };
 
@@ -22,11 +22,11 @@ function openMobileMenu() {
 
 burgerMenu.addEventListener('click', openMobileMenu);
 
- //activation products listWomen
+//activation products listWomen
 
- const classList1 = document.querySelector(".classList1")
+const classList1 = document.querySelector(".classList1")
 
- const categoriesWomen = document.querySelector(".categoriesWomen")
+const categoriesWomen = document.querySelector(".categoriesWomen")
 
 function womenList() {
     categoriesWomen.classList.toggle("categoriesWomenActiv")
@@ -34,11 +34,11 @@ function womenList() {
 
 classList1.addEventListener('click', womenList)
 
- //activation products listMen
+//activation products listMen
 
 const classList2 = document.querySelector(".classList2")
 
-const categoriesMen = document.querySelector(".categoriesMen") 
+const categoriesMen = document.querySelector(".categoriesMen")
 
 function menList() {
     categoriesMen.classList.toggle("categoriesWomenActiv")
@@ -46,11 +46,11 @@ function menList() {
 
 classList2.addEventListener('click', menList)
 
- //activation products listGirls
+//activation products listGirls
 
 const classList3 = document.querySelector(".classList3")
 
-const categoriesGirls = document.querySelector(".categoriesGirls") 
+const categoriesGirls = document.querySelector(".categoriesGirls")
 
 function girlsList() {
     categoriesGirls.classList.toggle("categoriesWomenActiv")
@@ -58,11 +58,11 @@ function girlsList() {
 
 classList3.addEventListener('click', girlsList)
 
- //activation products listBoys
+//activation products listBoys
 
 const classList4 = document.querySelector(".classList4")
 
-const categoriesBoys = document.querySelector(".categoriesBoys") 
+const categoriesBoys = document.querySelector(".categoriesBoys")
 
 function boysList() {
     categoriesBoys.classList.toggle("categoriesWomenActiv")
@@ -72,27 +72,24 @@ classList4.addEventListener('click', boysList)
 
 // remove class in burgermenu list
 
-function removeClass() {
-    var list1 = document.getElementById("list1").classList;
-    var list2 = document.getElementById("list2").classList;
-    var list3 = document.getElementById("list3").classList;
-    var list4 = document.getElementById("list4").classList;
+const clothesLists = document.querySelectorAll(".clothesList")
 
-    if(list1.contains("categoriesWomenActiv")){
-        list2.remove("categoriesWomenActiv")
-        list3.remove("categoriesWomenActiv")
-        list4.remove("categoriesWomenActiv")
-    }else if(list2.contains("categoriesWomenActiv")){
-        list1.remove("categoriesWomenActiv")
-        list3.remove("categoriesWomenActiv")
-        list4.remove("categoriesWomenActiv")
-    }else if(list3.contains("categoriesWomenActiv")){
-        list1.remove("categoriesWomenActiv")
-        list2.remove("categoriesWomenActiv")
-        list4.remove("categoriesWomenActiv")
-    }else if(list4.contains("categoriesWomenActiv")){
-        list1.remove("categoriesWomenActiv")
-        list2.remove("categoriesWomenActiv")
-        list3.remove("categoriesWomenActiv")
+clothesLists.forEach(clothesList => {
+    clothesList.addEventListener('click', () => {
+        closeSubmenu()
+        const subMenu = clothesList.querySelector(".submenu")
+        subMenu.classList.remove('close')
     }
+    )
+})
+
+
+const submenus = document.querySelectorAll(".submenu")
+
+function closeSubmenu() {
+    submenus.forEach(submenu => {
+        submenu.classList.add("close")
+    })
 }
+
+
