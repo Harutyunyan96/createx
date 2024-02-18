@@ -73,17 +73,19 @@
     display: flex;
   }
 
+  .burgerList {
+    display: block;
+  }
+
 }
 
 @media (max-width:481px) {
   .logo {
     width: 40%;
   }
+  
+  .burgerList {
+    display: block;
+  }
 
 }
-
-@media (max-width:320px) {
-
-  }
-  
-

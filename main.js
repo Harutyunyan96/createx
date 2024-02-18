@@ -93,3 +93,17 @@ function closeSubmenu() {
 }
 
 
+// slider 
+
+function slideLeft() {
+    const slidersBlock = document.querySelector('.slidersBlock');
+    const sliderWidth = document.querySelector('.inSliderMen').offsetWidth; // Assuming all sliders have the same width
+    slidersBlock.scrollLeft -= sliderWidth;
+}
+
+function slideRight() {
+    const slidersBlock = document.querySelector('.slidersBlock');
+    const sliderWidth = document.querySelector('.inSliderMen').offsetWidth; // Assuming all sliders have the same width
+    slidersBlock.scrollLeft += sliderWidth;
+}
+

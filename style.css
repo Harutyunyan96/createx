@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .flexClass {
@@ -356,6 +356,9 @@
     display: flex;
     flex-direction: column;
     transition: 0.3s;
+    display: none;
+    overflow: hidden;
+    z-index: 99;
 }
 
 .avtiveMobileMenu {
@@ -448,23 +451,50 @@
 .slider {
     width: 100%;
     height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidersBlock {
+    width: 7150px;
+    height: 800px;
     display: flex;
 }
 
-.inSlider {
+.inSliderMen {
     width: 100%;
     height: 800px;
     background-image: url(./IMG/sliderImgOne.png);
-    background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.inSliderWomen {
+    width: 100%;
+    height: 800px;
+    background-image: url(./IMG/sliderWoman.jpg);
+    background-repeat: no-repeat;
+}
+
+.inSliderBoy {
+    width: 100%;
+    height: 800px;
+    background-image: url(./IMG/sliderBoys.jpg);
+    background-repeat: no-repeat;
+}
+
+.inSliderGirls {
+    width: 100%;
+    height: 800px;
+    background-image: url(./IMG/sliderGirls.jpg);
+    background-repeat: no-repeat;
 }
 
 .leftArrow {
-    width: 10%;
-    height: 800px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 1px;
+    top: 40%;
 }
 
 .leftCirckl {
@@ -576,8 +606,11 @@
 }
 
 .rightArrow {
-    width: 10%;
-    height: 800px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 1px;
+    top: 40%;
 }
 
 .rightCirckl {
