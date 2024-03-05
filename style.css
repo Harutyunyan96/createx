@@ -1,625 +1,748 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  border: 1px solid red;
 }
 
 .flexClass {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexLeft {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .header {
-    width: 100%;
-    height: 150px;
+  width: 100%;
+  height: 150px;
 }
 
 .headerTop {
-    width: 100%;
-    height: 40px;
-    background-color: rgba(30, 33, 44, 1);
+  width: 100%;
+  height: 40px;
+  background-color: rgba(30, 33, 44, 1);
 }
 
 .headerCenter {
-    width: 70%;
-    height: 100px;
-    display: flex;
+  width: 70%;
+  height: 100px;
+  display: flex;
 }
 
 .logo {
-    width: 20%;
-    height: 100px;
-    gap: 5px;
+  width: 20%;
+  height: 100px;
+  gap: 5px;
 }
 
 .navigation {
-    width: 30%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 30%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav {
-    font-family: "Lato";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: rgba(66, 69, 81, 1);
-    
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(66, 69, 81, 1);
 }
 
-.manuItem:hover .nav{
-    color: rgb(48, 237, 240);
-    transition: .3s;
+.manuItem:hover .nav {
+  color: rgb(48, 237, 240);
+  transition: 0.3s;
 }
 
 .menuName {
-    width: 100%;
-    height: 650px;
-    position: absolute;
-    top: 120px;
-    right: .1px;
-    border-top: 2px solid rgb(107, 109, 114);
-    background-color: white;
-    flex-direction: column;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 120px;
+  right: 0.1px;
+  border-top: 2px solid rgb(107, 109, 114);
+  background-color: white;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .menutransparent {
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    background-color: transparent;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background-color: transparent;
 }
 
 .manuItem {
-    height: 45px;
-    z-index: 999;
+  height: 45px;
+  z-index: 999;
 }
 
-.manuItem:hover>.menuName {
-    visibility: visible;
-    opacity: 1;
-    border-top: 2px solid rgb(107, 109, 114);
-    transition: 0.4s;
+.manuItem:hover > .menuName {
+  visibility: visible;
+  opacity: 1;
+  border-top: 2px solid rgb(107, 109, 114);
+  transition: 0.4s;
 }
 
 .inManuName {
-    width: 70%;
-    height: 550px;
-    display: flex;
-    position: absolute;
-    top: 50px;
+  width: 70%;
+  height: 550px;
+  display: flex;
+  position: absolute;
+  top: 50px;
 }
 
 .infoBlock {
-    width: 16%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .info {
-    font-family: "Lato";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    text-decoration: none;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(66, 69, 81, 1);
-    margin-top: 15px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(66, 69, 81, 1);
+  margin-top: 15px;
 }
 
 .info:nth-child(4) {
-    color: red;
+  color: red;
 }
 
 .clothes {
-    width: 16%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .clothesTitle {
-    font-family: "Lato";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-align: left;
-    color: rgba(30, 33, 44, 1);
-    margin-top: 15px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(30, 33, 44, 1);
+  margin-top: 15px;
 }
 
 .listName {
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: rgba(66, 69, 81, 1);
-    margin-top: 10px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(66, 69, 81, 1);
+  margin-top: 10px;
 }
 
 .listName:hover {
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(23, 105, 106, 1);
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(23, 105, 106, 1);
 }
 
 .shoes {
-    width: 16%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .shoesTitle {
-    font-family: "Lato";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-align: left;
-    color: rgba(30, 33, 44, 1);
-    margin-top: 15px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(30, 33, 44, 1);
+  margin-top: 15px;
 }
 
 .accessories {
-    width: 16%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .accessoriesTitle {
-    font-family: "Lato";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-align: left;
-    color: rgba(30, 33, 44, 1);
-    margin-top: 15px; 
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(30, 33, 44, 1);
+  margin-top: 15px;
 }
 
 .advertis {
-    width: 35%;
-    height: 100%;
-    border-left: 1px solid  rgba(218, 219, 221, 0.5);
+  width: 35%;
+  height: 100%;
+  border-left: 1px solid rgba(218, 219, 221, 0.5);
 }
 
 .inAdvertis {
-    height: 100%;
+  height: 100%;
 }
 
 .advertisImage {
-    width: 285px;
-    height: 285px;
-    margin-top: 15px;
-    background-image: url(./IMG/advertisImage.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 285px;
+  height: 285px;
+  margin-top: 15px;
+  background-image: url(./IMG/advertisImage.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advertisTitle {
-    width: 285px;
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(66, 69, 81, 1);
-    margin-top: 15px;
+  width: 285px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(66, 69, 81, 1);
+  margin-top: 15px;
 }
 
 .advertisButton {
-    width: 130px;
-    height: 36px;
-    margin-top: 15px;
-    border: 1px solid rgba(23, 105, 106, 1);
-    border-radius: 5px;
-    font-family: "Lato";
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: rgba(23, 105, 106, 1);
-    gap: 5px;
+  width: 130px;
+  height: 36px;
+  margin-top: 15px;
+  border: 1px solid rgba(23, 105, 106, 1);
+  border-radius: 5px;
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgba(23, 105, 106, 1);
+  gap: 5px;
 }
 
 .sell {
-    font-family: "Lato";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: rgba(255, 66, 66, 1);
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(255, 66, 66, 1);
 }
 
 .sell:hover {
-    color: rgb(105, 255, 67);
+  color: rgb(105, 255, 67);
 }
 
 .search {
-    width: 35%;
-    height: 100px;
+  width: 35%;
+  height: 100px;
 }
 
 .searchBlock {
-    width: 350px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(154, 156, 165, 1);
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(154, 156, 165, 1);
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .inSearch {
-    width: 250px;
-    height: 40px;
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(154, 156, 165, 1);
-    border: none;
+  width: 250px;
+  height: 40px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(154, 156, 165, 1);
+  border: none;
 }
 
 .toolBar {
-    width: 15%;
-    height: 100px;
+  width: 15%;
+  height: 100px;
 }
 
 .burgerMenu {
-    width: 80px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    display: none;
-    position: relative;
+  width: 80px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: none;
+  position: relative;
 }
 
 .line {
-    width: 80%;
-    height: 5px;
-    background-color: black;
-    transition: .1s;
+  width: 80%;
+  height: 5px;
+  background-color: black;
+  transition: 0.1s;
 }
 
-.burgerMenu.active .line:nth-child(1){
-    transform: translate(-50%, -50%) rotate(45deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.burgerMenu.active .line:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
-.burgerMenu.active .line:nth-child(2){
-    opacity: 0;
-    transition: .1s;
+.burgerMenu.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.1s;
 }
 
-.burgerMenu.active .line:nth-child(3){
-    transform: translate(-50%, -50%) rotate(-45deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.burgerMenu.active .line:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .burgerList {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 150px;
-    right: 1px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-    display: none;
-    overflow: hidden;
-    z-index: 99;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  right: 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  display: none;
+  overflow: hidden;
+  z-index: 99;
 }
 
 .avtiveMobileMenu {
-    width: 300px;
+  width: 300px;
 }
 
 .clothesList {
-    width: 100%;
-    height: 50px;
-    font-family: "Lato";
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: center;
-    list-style-type: none;
-    color: #424551;
-    margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  list-style-type: none;
+  color: #424551;
+  margin-top: 10px;
 }
 
 .categoriesWomen {
-    width: 0;
-    height: 120px;
-    position: absolute;
-    top: 10px;
-    right: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-} 
+  width: 0;
+  height: 120px;
+  position: absolute;
+  top: 10px;
+  right: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 .categoriesMen {
-    width: 0px;
-    height: 120px;
-    position: absolute;
-    top: 60px;
-    right: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-} 
+  width: 0px;
+  height: 120px;
+  position: absolute;
+  top: 60px;
+  right: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 .categoriesGirls {
-    width: 0px;
-    height: 120px;
-    position: absolute;
-    top: 120px;
-    right: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}   
+  width: 0px;
+  height: 120px;
+  position: absolute;
+  top: 120px;
+  right: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 .categoriesBoys {
-    width: 0px;
-    height: 120px;
-    position: absolute;
-    top: 190px;
-    right: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}   
+  width: 0px;
+  height: 120px;
+  position: absolute;
+  top: 190px;
+  right: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 .categoriesWomenActiv {
-    width: 300px;
+  width: 300px;
 }
 
 .clothesCategories {
-    font-family: "Lato";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: rgba(30, 33, 44, 1);
-    list-style-type: none;
-    margin-top: 10px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(30, 33, 44, 1);
+  list-style-type: none;
+  margin-top: 10px;
 }
 
 .headerBottom {
-    width: 100%;
-    height: 35px;
-    background-color: rgba(23, 105, 106, 1);
+  width: 100%;
+  height: 35px;
+  background-color: rgba(23, 105, 106, 1);
 }
 
 .slider {
-    width: 100%;
-    height: 800px;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  /* overflow: auto; */
 }
 
 .slidersBlock {
-    width: 7150px;
-    height: 800px;
-    display: flex;
+  width: 7150px;
+  height: 800px;
+  display: flex;
+  position: relative;
+  transition: .3s;
 }
 
 .inSliderMen {
-    width: 100%;
-    height: 800px;
-    background-image: url(./IMG/sliderImgOne.png);
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  background-image: url(./IMG/sliderImgOne.png);
+  background-repeat: no-repeat;
 }
 
 .inSliderWomen {
-    width: 100%;
-    height: 800px;
-    background-image: url(./IMG/sliderWoman.jpg);
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  background-image: url(./IMG/sliderWoman.jpg);
+  background-repeat: no-repeat;
 }
 
 .inSliderBoy {
-    width: 100%;
-    height: 800px;
-    background-image: url(./IMG/sliderBoys.jpg);
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  background-image: url(./IMG/sliderBoys.jpg);
+  background-repeat: no-repeat;
 }
 
 .inSliderGirls {
-    width: 100%;
-    height: 800px;
-    background-image: url(./IMG/sliderGirls.jpg);
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  background-image: url(./IMG/sliderGirls.jpg);
+  background-repeat: no-repeat;
 }
 
 .leftArrow {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 1px;
-    top: 40%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 1px;
+  top: 40%;
+  z-index: 99;
+  cursor: pointer;
 }
 
 .leftCirckl {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .sliderContent {
-    width: 70%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 10px;
+  width: 70%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
 }
 
-
 .collection {
-    font-family: "Lato";
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 1px;
-    text-align: left;
-    color: rgba(30, 33, 44, 1);
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(30, 33, 44, 1);
 }
 
 .gender {
-    font-family: "Lato";
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 94px;
-    letter-spacing: 1px;
-    text-align: left;
-    color: rgba(30, 33, 44, 1);
+  font-family: "Lato";
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 94px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(30, 33, 44, 1);
 }
 
 .buttonBlock {
-    width: 410px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
+  width: 410px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .buttonOne {
-    width: 155px;
-    height: 55px;
-    border-radius: 5px;
-    border: 2px solid rgba(23, 105, 106, 1);
-    background-color: transparent;
-    cursor: pointer;
-    font-family: "Lato";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 52px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: rgba(23, 105, 106, 1);
+  width: 155px;
+  height: 55px;
+  border-radius: 5px;
+  border: 2px solid rgba(23, 105, 106, 1);
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgba(23, 105, 106, 1);
 }
 
 .buttonTwo {
-    width: 230px;
-    height: 55px;
-    border-radius: 5px;
-    border: 2px solid rgba(23, 105, 106, 1);
-    background-color: rgba(23, 105, 106, 1);
-    cursor: pointer;
-    font-family: "Lato";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 52px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: white;
+  width: 230px;
+  height: 55px;
+  border-radius: 5px;
+  border: 2px solid rgba(23, 105, 106, 1);
+  background-color: rgba(23, 105, 106, 1);
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white;
 }
 
 .sliderNumber {
-    width: 55%;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end;
+  width: 55%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
 }
 
 .pageNumberGlobal {
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
 }
 
 .pageNumber {
-    font-family: "Lato";
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    color: #424551;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: #424551;
 }
 
 .pageLine {
-    width: 95%;
-    height: 5px;
-    border-color: #424551;
-    background-color: #424551;
-    margin-top: 20px;
+  width: 95%;
+  height: 5px;
+  border-color: #424551;
+  background-color: #424551;
+  margin-top: 20px;
 }
 
 .rightArrow {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 1px;
-    top: 40%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 1px;
+  top: 40%;
+  cursor: pointer;
 }
 
 .rightCirckl {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .close {
-    display: none;
+  display: none;
+}
+
+.collectionImage {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
+.inCollectionImage {
+  width: 1230px;
+  height: 450px;
+  position: absolute;
+  left: 20%;
+  top: -10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.womensImage {
+  width: 390px;
+  height: 390px;
+  background-image: url(./IMG/collectionWomens.png);
+  background-repeat: no-repeat;
+}
+
+.womensImageContent {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424551;
+  margin-top: 10px;
+}
+
+.mensImage {
+  width: 390px;
+  height: 390px;
+  background-image: url(./IMG/collectionMens.png);
+  background-repeat: no-repeat;
+}
+
+.mensImageContent {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424551;
+  margin-top: 10px;
+}
+
+.kidsImage {
+  width: 390px;
+  height: 390px;
+  background-image: url(./IMG/collectionKids.png);
+  background-repeat: no-repeat;
+}
+
+.kidsImageContent {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424551;
+  margin-top: 10px;
+}
+
+.newArreals {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrealsTop {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrealsTitle {
+  font-family: "Lato";
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: center;
+  color: rgba(30, 33, 44, 1);
+}
+
+.arrealsSubTitle {
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(120, 122, 128, 1);
+  margin-top: 20px;
+}
+
+.collectinLinke {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+
+.arrealsCenter {
+  width: 100%;
+  height: 420px;
 }
