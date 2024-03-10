@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .flexClass {
@@ -456,7 +456,7 @@
 }
 
 .slidersBlock {
-  width: 7150px;
+  width: 7680px;
   height: 800px;
   display: flex;
   position: relative;
@@ -745,4 +745,224 @@
 .arrealsCenter {
   width: 100%;
   height: 420px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productBlocks {
+  width: 290px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImageOne {
+  width: 285px;
+  height: 320px;
+  border-radius: 4px;
+  background-image: url(./IMG/products/cap.png);
+  background-repeat: no-repeat;
+}
+
+.productNameOne {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #424551;
+  margin-top: 5px;
+}
+
+.productPriceOne {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #1E212C;
+  margin-top: 5px;
+}
+
+.productImageTwo {
+  width: 285px;
+  height: 320px;
+  border-radius: 4px;
+  background-image: url(./IMG/products/glassess.png);
+  background-repeat: no-repeat;
+}
+
+.productNameTwo {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #424551;
+  margin-top: 5px;
+}
+
+.productPriceTwo {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #1E212C;
+  margin-top: 5px;
+}
+
+.productImageThree {
+  width: 285px;
+  height: 320px;
+  border-radius: 4px;
+  background-image: url(./IMG/products/ramper.png);
+  background-repeat: no-repeat;
+}
+
+.productNameThree {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #424551;
+  margin-top: 5px;
+}
+
+.productPriceThree {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #1E212C;
+  margin-top: 5px;
+}
+
+.productImageFour {
+  width: 285px;
+  height: 320px;
+  border-radius: 4px;
+  background-image: url(./IMG/products/jeans.png);
+  background-repeat: no-repeat;
+}
+
+.productNameFour {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #424551;
+  margin-top: 5px;
+}
+
+.productPriceFour {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #1E212C;
+  margin-top: 5px;
+}
+
+.productImageFive {
+  width: 285px;
+  height: 320px;
+  border-radius: 4px;
+  background-image: url(./IMG/products/earrings.png
+  );
+  background-repeat: no-repeat;
+}
+
+.productNameFive {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #424551;
+  margin-top: 5px;
+}
+
+.productPriceFive {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #1E212C;
+  margin-top: 5px;
+}
+
+.productImageSix {
+  width: 285px;
+  height: 320px;
+  border-radius: 4px;
+  background-image: url(./IMG/products/shoes.png);
+  background-repeat: no-repeat;
+}
+
+.productNameSix {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #424551;
+  margin-top: 5px;
+}
+
+.productPriceSix {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #1E212C;
+  margin-top: 5px;
+}
+
+.arrealsBottom {
+  width: 100%;
+  height: 70px;
+}
+
+.arrealsBottomLineOne {
+  width: 30px;
+  border: 3px solid rgba(66, 69, 81, 1);
+  margin-right: 10px;
+}
+
+.arrealsBottomLineTwo {
+  width: 30px;
+  border: 3px solid rgba(179, 183, 188, 1);
+  margin-right: 10px;
+}
+
+.arrealsBottomLineThree {
+  width: 30px;
+  border: 3px solid rgba(179, 183, 188, 1);
+  margin-right: 10px;
+}
+
+.arrealsBottomLineFour {
+  width: 30px;
+  border: 3px solid rgba(179, 183, 188, 1);
+  margin-right: 10px;
+}
+
+.arrealsBottomLineFive {
+  width: 30px;
+  border: 3px solid rgba(179, 183, 188, 1);
+  margin-right: 10px;
+}
+
+.arrealsBottomLineSix {
+  width: 30px;
+  border: 3px solid rgba(179, 183, 188, 1);
+  margin-right: 10px;
 }
